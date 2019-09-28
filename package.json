@@ -1,0 +1,18 @@
+{
+  "name": "api-veiculos",
+  "version": "1.0.0",
+  "description": "API para gerenciamento de veículos",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "author": "Adriana <adrideoli@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1",
+    "nodemon": "^1.19.2",
+    "uuid": "^3.3.3"
+  }
+}
