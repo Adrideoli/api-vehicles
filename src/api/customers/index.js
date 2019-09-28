@@ -22,7 +22,7 @@ routes.post("/", function (req, res) {
         street: req.body.street
     })
 
-    res.json({ msg: 'Cliente criado!' })    
+    res.json({ msg: 'Cliente cadastrado!' })    
 });
 
 // Função PUT 
@@ -33,7 +33,7 @@ routes.put("/:id", function (req, res) {
     customersModel.findOneAndUpdate({ _id: id }, {
         name: req.body.name,
         street: req.body.street
-    }).then (() => res.json({ msg: 'Cliente atualizado '}))
+    }).then (() => res.json({ msg: 'Cliente atualizado!' }))
 });
 
 // Função DELETE
