@@ -19,10 +19,15 @@ routes.get("/", function (req, res) {
 routes.post("/", function (req, res) {
     customersModel.create({
         name: req.body.name, 
-        street: req.body.street
-    })
+        cep: req.body.cep,
+        street: req.body.street,
+        neighborhood: req.body.neighborhood,
+        number: req.body.number,
+        city: req.body.city,
+        state: req.body.state
+    });
 
-    res.json({ msg: 'Cliente cadastrado!' })    
+    res.json({ msg: 'Cliente cadastrado!' });    
 });
 
 // Função PUT 
